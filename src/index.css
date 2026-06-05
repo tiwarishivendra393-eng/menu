@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #ffedd5 0%, #fff7ed 45%, #fffbeb 100%);
+  color: #431407;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
