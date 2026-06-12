@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import CategorySection from "./components/CategorySection"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 import menuData from "./data/menu.json"
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
     <div className="relative isolate min-h-screen overflow-hidden">
       <div className="pointer-events-none absolute inset-x-0 -top-28 h-80 bg-gradient-to-b from-orange-300/40 to-transparent blur-3xl" />
       <div className="pointer-events-none absolute -right-24 top-[36rem] h-72 w-72 rounded-full bg-red-200/30 blur-3xl" />
-{/* fhfhieinensndjcvndfkjnvkjfkjvfjksvkjfvjvfvn */}
-      <main className="mx-auto max-w-3xl space-y-6 px-4 py-6 sm:px-6 sm:py-8">
+
+      <main className="mx-auto max-w-3xl space-y-6 px-4 py-6 pb-24 sm:px-6 sm:py-8 sm:pb-8">
         <Header
           restaurantName={menuData.restaurantName}
           welcomeMessage={menuData.welcomeMessage}
@@ -31,6 +32,8 @@ function App() {
 
         <Footer contactNumber={menuData.contactNumber} />
       </main>
+
+      <ScrollToTop />
     </div>
   )
 }
